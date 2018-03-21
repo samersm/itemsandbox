@@ -13,7 +13,8 @@ import { ItemDetailsComponent } from './views/items/item-details/item-details.co
 import { DataService } from './services/data.service';
 
 const appRoutes: Routes = [
-  {path:'', component:DashboardComponent}
+  {path:'', component:DashboardComponent},
+  {path:'details', component:ItemDetailsComponent}
 ];
 
 @NgModule({
