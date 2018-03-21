@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +12,9 @@ import { EditItemComponent } from './views/items/edit-item/edit-item.component';
 import { ItemDetailsComponent } from './views/items/item-details/item-details.component';
 import { DataService } from './services/data.service';
 
+const appRoutes: Routes = [
+  {path:'', component:DashboardComponent}
+];
 
 @NgModule({
   declarations: [
@@ -23,7 +27,8 @@ import { DataService } from './services/data.service';
     ItemDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
