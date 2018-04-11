@@ -1,0 +1,6 @@
+
+$ ng new itemsandbox
+Commit..
+
+$ npm install --save express body-parser morgan body-parser serve-favicon
+Commit..
