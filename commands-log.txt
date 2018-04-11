@@ -3,4 +3,8 @@ $ ng new itemsandbox
 Commit..
 
 $ npm install --save express body-parser morgan body-parser serve-favicon
+$ mkdir bin
+$ mkdir routes
+$ touch bin/www
+$ touch routes/item.js
 Commit..
