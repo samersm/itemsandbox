@@ -8,3 +8,6 @@ $ mkdir routes
 $ touch bin/www
 $ touch routes/item.js
 Commit..
+
+$ npm install --save mongoose bluebird
+Commit..
